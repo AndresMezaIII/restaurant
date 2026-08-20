@@ -2,6 +2,9 @@
   --th-bg-color: #7b6c5a;
   --tr-nthchild-odd: #00ffff;
   --hover-tr: #808088;
+  --cancelled: red;
+  --pending: orange;
+  --confirmed: lightgreen;
 }
 
 table td {
@@ -23,4 +26,16 @@ tbody tr:nth-child(odd) {
 
 tbody tr:hover {
   background-color: var(--hover-tr);
+}
+
+.status-cancelled:hover {
+  background-color: var(--cancelled);
+}
+
+.status-pending:hover {
+  background-color: var(--pending);
+}
+
+.status-confirmed:hover {
+  background-color: var(--confirmed);
 }
