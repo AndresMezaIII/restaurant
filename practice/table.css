@@ -5,6 +5,7 @@
   --primary-color: #808088;
   --row-alt: #660b4c;
   --row-hover: #224b8c;
+  --row-odd: #52ba1d;
 }
 
 * {
@@ -83,8 +84,16 @@ th {
   background-color: var(--row-alt);
 }
 
+.styledTable tbody tr:nth-child(odd) {
+  background-color: var(--row-odd);
+}
+
 .styledTable tbody tr:hover {
   nacground-color: var(--row-hover);
   color: var(--text-light);
   cursor: pointer;
+}
+
+.styledTable td {
+  text-align: left;
 }
