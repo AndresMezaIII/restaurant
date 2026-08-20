@@ -1,6 +1,10 @@
 :root {
   --accent-color: #f87171;
-  --text-light: #ffffff;
+  --text-light: green;
+  --header-bg: #384f2d;
+  --primary-color: #808088;
+  --row-alt: #660b4c;
+  --row-hover: #224b8c;
 }
 
 * {
@@ -11,6 +15,21 @@
 body {
   font-family: arial;
   background-color: #f9f9f9;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 /* header basic table style */
@@ -33,4 +52,39 @@ td {
 th {
   background-color: var(--accent-color);
   color: var(--text-light);
+}
+
+/* schedule table */
+
+.scheduleTable th {
+  background-color: var(--header-bg);
+  text-align: center;
+}
+
+.scheduleTable td {
+  text-align: center;
+}
+
+.styledTable th {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.styledTable td {
+  text-align: center;
+}
+
+.styledTable th {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.styledTable tbody tr:nth-child(even) {
+  background-color: var(--row-alt);
+}
+
+.styledTable tbody tr:hover {
+  nacground-color: var(--row-hover);
+  color: var(--text-light);
+  cursor: pointer;
 }
