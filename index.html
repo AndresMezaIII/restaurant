@@ -14,7 +14,7 @@
     <header class="site-init">
       <p><i class="fa-solid fa-bars"></i></p>
       <h1>Restaurant</h1>
-      <nav>
+      <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="reservations.html">Reservations</a>
         <a href="createReservation">Make a Reservation</a>
@@ -22,18 +22,33 @@
 
       <p><i class="fa-solid fa-cart-shopping"></i></p>
     </header>
-    <main>
-      <img src="salad.png" alt="A healthy salad" class="salad" />
-      <div class="dish-month">
-        <h2>Healthy Salad</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque
-          molestias sint aut, asperiores nostrum, blanditiis magnam enim quidem
-          a eveniet ipsa. Magni vel excepturi iusto. Harum sapiente earum quo.
-        </p>
-        <div>
-          <p>$39.99</p>
-          <a href="#">Order Now!</a>
+    <main class="container">
+      <div class="dish-month-container">
+        <img src="salad.png" alt="A healthy salad" class="salad" />
+        <div class="dish-month">
+          <h2>Healthy Salad</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque
+            molestias sint aut, asperiores nostrum, blanditiis magnam enim
+            quidem a eveniet ipsa. Magni vel excepturi iusto. Harum sapiente
+            earum quo.
+          </p>
+          <div class="order-now-container">
+            <p>$39.99</p>
+            <a href="#" class="order-btn">Order Now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-container">
+        <div class="item">
+          <div cass="dish-image-wrapper">
+            <img src="#" alt="" />
+            <span class="price-tag">$3.00</span>
+          </div>
+          <div class="dish-info">
+            <h3>Title</h3>
+            <p>best in</p>
+          </div>
         </div>
       </div>
     </main>
