@@ -47,3 +47,12 @@ p {
   gap: 3px;
   grid-template-columns: repeat(3, 1fr);
 }
+
+/*mini-challenge*/
+
+.logo-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: gray;
+}
