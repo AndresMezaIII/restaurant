@@ -3,9 +3,26 @@
   margin: 0;
   padding: 0px;
 }
+
+body {
+  font-family: helvetica;
+  background-color: antiquewhite;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
 /*utilities*/
 
 /*header*/
+.site-init {
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
 
 /*navigation*/
 
