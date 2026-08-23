@@ -3,7 +3,7 @@
   --primary-color: rgb(144, 28, 62);
   --hover-color: rgb(182, 20, 20);
   --nav-background-color: rgb(209, 223, 178);
-  --price-tag-color: #fff06a;
+  --price-tag-color: #ff0000;
   --black: black;
   --white: white;
   --seagreen: rgb(114, 210, 155);
@@ -120,7 +120,8 @@ img {
 
 .dotm-dish {
   color: var(--seagreen);
-  margin-left: -190px;
+  margin-left: -170px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .dish-img-wrapper {
@@ -147,6 +148,10 @@ img {
 
 .dotm-blurb p {
   width: 65%;
+}
+
+.dotm-p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .order-now-container {
@@ -195,5 +200,12 @@ img {
 }
 
 .menu-item {
-  padding: 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
+
+.tag {
+  color: var(--price-tag-color);
+  text-align: center;

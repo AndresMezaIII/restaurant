@@ -3,17 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Royal Lounge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--START OF GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--END OF GOOGLE FONTS-->
+    <!--FONT AWESOME ICONS-->
     <script
       src="https://kit.fontawesome.com/337be747ec.js"
       crossorigin="anonymous"
     ></script>
+    <!--END OF FONT AWESOME ICONS-->
   </head>
   <body>
-    <header class="site-init">
+    <header class="header">
       <p><i class="fa-solid fa-bars"></i></p>
-      <h1>Restaurant</h1>
+      <div class="logoSlogan">
+        <h1 class="logo">The Royal Lounge</h1>
+        <h5 class="slogan">Est. 2026</h5>
+      </div>
+      <img src="seal.png" alt="A royal seal" class="seal" />
       <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="reservations.html">Reservations</a>
@@ -21,59 +41,72 @@
       </nav>
       <p><i class="fa-solid fa-cart-shopping"></i></p>
     </header>
-    <main class="container">
-      <div class="dish-month-container">
-        <img src="salad.png" alt="A healthy salad" class="food-size" />
-        <div class="dish-month">
-          <h2>Healthy Salad</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque
-            molestias sint aut, asperiores nostrum, blanditiis magnam enim
-            quidem a eveniet ipsa. Magni vel excepturi iusto. Harum sapiente
-            earum quo.
+    <main class="main-container">
+      <h2 class="dotm-ad">Dish of the Month</h2>
+      <div class="dish-of-the-month">
+        <div class="dish-image-wrapper">
+          <img src="salad.png" alt="A delicious salad" class="salad" />
+        </div>
+        <div class="dotm-blurb">
+          <h2 class="dotm-dish">Farmer's Fresh Salad</h2>
+          <p class="dotm-p">
+            This month's chef's favorite dish is a delicious farm-to-table salad
+            with our signature
+            <span class="vinigrette-text">Royal Vinigrette</span> and cracked
+            pepper. Featuring a variety of home-grown tomatoes, cucumber,
+            romaine lettuce, red onion, and shaved carrot.
           </p>
           <div class="order-now-container">
-            <p>$39.99</p>
-            <a href="#" class="order-btn">Order Now!</a>
+            <div class="price-tag">
+              $19.99 <span class="tax-text">+ tax</span>
+            </div>
+            <a href="#" class="order-btn">Feast now!</a>
           </div>
         </div>
       </div>
+      <!-- END OF DISH OF THE MONTH -->
       <div class="menu-container">
-        <div class="dish-item">
-          <div cass="dish-image-wrapper">
-            <img src="steak.png" alt="" class="food-size" />
-          </div>
-          <div class="dish-info">
-            <h3>Angus Steak</h3>
-            <span class="price-tag">$39.00</span>
-            <p class="tag">best in</p>
-          </div>
-        </div>
-        <!-- end of item -->
-        <div class="dish-item">
+        <div class="menu-item">
           <div cass="dish-image-wrapper">
             <img src="kebabs.png" alt="" class="food-size" />
           </div>
           <div class="dish-info">
             <h3>Chicken Kebabs</h3>
             <span class="price-tag">$13.00</span>
-            <p class="tag">best in</p>
           </div>
         </div>
-        <!-- end of dish -->
-        <div class="dish-item">
+        <!-- END OF DISH ITEM -->
+        <div class="menu-item">
           <div cass="dish-image-wrapper">
-            <img src="tofu.png" alt="" class="food-size" />
+            <img src="kebabs.png" alt="" class="food-size" />
           </div>
           <div class="dish-info">
-            <h3>Tofu Salad</h3>
-            <span class="price-tag">$23.00</span>
-            <p class="tag">best in</p>
+            <h3>Chicken Kebabs</h3>
+            <span class="price-tag">$26.00</span>
+            <p class="tag">BEST</p>
           </div>
         </div>
-        <!-- end of dish -->
+        <!-- END OF DISH ITEM -->
+        <div class="menu-item">
+          <div cass="dish-image-wrapper">
+            <img src="kebabs.png" alt="" class="food-size" />
+          </div>
+          <div class="dish-info">
+            <h3>Chicken Kebabs</h3>
+            <span class="price-tag">$13.00</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div cass="dish-image-wrapper">
+            <img src="kebabs.png" alt="" class="food-size" />
+          </div>
+          <div class="dish-info">
+            <h3>Chicken Kebabs</h3>
+            <span class="price-tag">$13.00</span>
+          </div>
+        </div>
+        <!-- END OF DISH ITEM -->
       </div>
-      <!-- end of menu -->
     </main>
   </body>
 </html>
