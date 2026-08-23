@@ -55,19 +55,16 @@ h2 {
   margin: 10px auto;
 }
 
+/*dish of the month*/
 .dish-month-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-/*dish-month*/
 
 .dish-month {
   padding: 10px;
   width: 60%;
-}
-.salad {
-  height: 240px;
-  width: 240px;
 }
 
 .order-now-container {
@@ -89,23 +86,32 @@ h2 {
 
 .dish-item {
   display: flex;
-  flex-direction: column;
-  border: 1px solid black;
+  flex-direction: row;
+  margin: 10px;
+  align-items: center;
+  margin: auto;
 }
 
-.dish-image-wrapper {
+.food-size {
+  height: 120px;
+  width: 120px;
+}
+
+/*.dish-image-wrapper {
   width: 100%;
 }
 
 .dish-image-wrapper img {
-  width: 100%px;
-  height: 100%;
+  width: 120px;
+  height: 120px;
   display: block;
 }
+  */
 
 .dish-info {
   padding: 20px;
   text-align: left;
+  margin: 10px;
 }
 
 .price-tag {
@@ -115,7 +121,7 @@ h2 {
   font-weight: 700;
   padding: 5px;
   border-radius: 30px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .tag {
