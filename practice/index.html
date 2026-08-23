@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family:wght@100..400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
       rel="stylesheet"
     />
     <script
@@ -32,12 +32,13 @@
       <p><i class="fa-solid fa-cart-shopping"></i></p>
     </header>
     <main class="main-container">
+      <h2 class="dotm-ad">Dish of the Month</h2>
       <div class="dish-of-the-month">
         <div class="dish-image-wrapper">
-          <img src="salad.png" alt="A delicious salad" />
+          <img src="salad.png" alt="A delicious salad" class="salad" />
         </div>
         <div class="dotm-blurb">
-          <h2>Farmer's Fresh Salad</h2>
+          <h2 class="dotm-dish">Farmer's Fresh Salad</h2>
           <p>
             This month's chef's favorite dish is a delicious farm-to-table salad
             with our signature
@@ -46,10 +47,10 @@
             romaine lettuce, red onion, and shaved carrot.
           </p>
           <div class="order-now-container">
-            <p class="price-tag">$19.99</p>
-            <a href="#" class="order-btn"
-              ><img src="order.png" alt="an order button" class="img-order-btn"
-            /></a>
+            <div class="price-tag">
+              $19.99 <span class="tax-text">+ tax</span>
+            </div>
+            <a href="#" class="order-btn">Feast now!</a>
           </div>
         </div>
       </div>

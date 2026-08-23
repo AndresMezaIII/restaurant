@@ -3,9 +3,10 @@
   --primary-color: rgb(144, 28, 62);
   --hover-color: rgb(182, 20, 20);
   --nav-background-color: rgb(209, 223, 178);
-  --price-tag-color: #ffe600;
+  --price-tag-color: #fff06a;
   --black: black;
   --white: white;
+  --seagreen: rgb(114, 210, 155);
 }
 
 * {
@@ -17,7 +18,8 @@
 
 body {
   font-family: arial;
-  background-color: var(--background-color);
+  background-color: var(--white);
+  background-image: url("texture.png");
 }
 
 a {
@@ -57,9 +59,9 @@ img {
 
 .logo {
   font-family: "Bonheur Royale", cursive;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 3px;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .logoSlogan {
@@ -76,8 +78,11 @@ img {
   font-weight: 100;
 }
 .seal {
-  margin-left: -250px;
+  margin-left: -140px;
   margin-top: 40px;
+  margin-bottom: 30px;
+  width: 120px;
+  height: 120px;
 }
 
 /*main*/
@@ -93,12 +98,28 @@ img {
   justify-content: center;
   align-items: center;
   width: 85%;
-  height: 400px;
+  margin-left: 175px;
+}
+
+.dotm-ad {
+  font-family: "Bonheur Royale", cursive;
+  font-size: 5rem;
+  margin: 0px;
+  padding: 0px;
+  color: var(--primary-color);
+  margin-left: 450px;
+  margin-top: 60px;
+  font-weight: 300;
 }
 
 .dish-of-the-month img {
   height: 120px;
-  width: 135px;
+  width: 120px;
+}
+
+.dotm-dish {
+  color: var(--seagreen);
+  margin-left: -190px;
 }
 
 .dish-img-wrapper {
@@ -109,6 +130,7 @@ img {
   width: 135px;
   height: 120px;
   display: block;
+  margin-top: 95px;
 }
 
 .dotm-blurb {
@@ -118,7 +140,7 @@ img {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  margin-top: 120px;
+  margin-top: 80px;
   margin-left: -110px;
 }
 
@@ -129,22 +151,37 @@ img {
 .order-now-container {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 80%;
+  margin: 10px;
 }
 
 .price-tag {
-  background-color: var(--price-tag-color);
   color: var(--black);
-  width: 25px;
+  width: 150px;
   font-size: 1.5rem;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
+
   padding: 10px;
-  border-radius: 80%;
+  margin: 0 50px;
 }
 
-.img-order-btn img {
-  height: 20px;
-  width: 30px;
+.tax-text {
+  color: var(--hover-color);
+}
+
+.order-btn {
+  width: 85px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+  margin-right: 65px;
+}
+
+.order-btn {
+  font-family: "Bonheur Royale", cursive;
+  font-size: 24px;
+  color: var(--white);
+  margin-top: 5px;
+  text-align: center;
+  padding-top: 10px;
 }
