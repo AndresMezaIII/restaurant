@@ -1,9 +1,11 @@
 :root {
-  --background-color: beige;
+  --background-color: antiquewhite;
   --primary-color: rgb(144, 28, 62);
   --hover-color: rgb(182, 20, 20);
-  --heading-color: rgb(145, 33, 194);
-  --nav-background-color: rgb(213, 154, 238);
+  --nav-background-color: rgb(209, 223, 178);
+  --price-tag-color: #ffe600;
+  --black: black;
+  --white: white;
 }
 
 * {
@@ -11,9 +13,20 @@
   padding: 0;
 }
 
+/*globals*/
+
 body {
   font-family: arial;
-  background-color: var(background-color);
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 70px;
+  width: 70px;
 }
 
 /*header*/
@@ -24,7 +37,6 @@ body {
   align-items: center;
   width: 100%;
   height: 20vh;
-  background-color: var(--nav-background-color);
 }
 
 .navigation {
@@ -34,7 +46,6 @@ body {
 }
 
 .navigation a {
-  text-decoration: none;
   color: var(--primary-color);
   margin-right: 20px;
   font-weight: 600;
@@ -49,17 +60,91 @@ body {
   font-weight: 300;
   letter-spacing: 3px;
   font-size: 2rem;
-  color: var(--heading-color);
 }
 
-.seal {
-  height: 70px;
-  width: 70px;
-  margin-left: -200px;
+.logoSlogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.slogan {
+  font-family: "Bonheur Royale", cursive;
+  font-size: 32px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.seal {
+  margin-left: -250px;
+  margin-top: 40px;
+}
+
+/*main*/
 
 .main-container {
   width: 85%;
   margin: 10px auto;
   gap: 20px;
+}
+
+.dish-of-the-month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 400px;
+}
+
+.dish-of-the-month img {
+  height: 120px;
+  width: 135px;
+}
+
+.dish-img-wrapper {
+  width: 100%;
+}
+
+.dish-image-wrapper img {
+  width: 135px;
+  height: 120px;
+  display: block;
+}
+
+.dotm-blurb {
+  padding: 10px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-left: -110px;
+}
+
+.dotm-blurb p {
+  width: 65%;
+}
+
+.order-now-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.price-tag {
+  background-color: var(--price-tag-color);
+  color: var(--black);
+  width: 25px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 10px;
+  border-radius: 80%;
+}
+
+.img-order-btn img {
+  height: 20px;
+  width: 30px;
 }
