@@ -12,9 +12,10 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Bonheur Royale", cursive;
 }
 
-/*globals*/
+/*SITE GLOBALS*/
 
 body {
   font-family: arial;
@@ -31,8 +32,7 @@ img {
   width: 70px;
 }
 
-/*header*/
-
+/*HEADER*/
 .header {
   display: flex;
   justify-content: space-around;
@@ -84,9 +84,9 @@ img {
   width: 120px;
   height: 120px;
 }
+/*END HEADER*/
 
-/*main*/
-
+/*MAIN*/
 .main-container {
   width: 85%;
   margin: 10px auto;
@@ -99,7 +99,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 85%;
-  margin-left: 175px;
+  margin-left: 145px;
 }
 
 .dotm-ad {
@@ -120,8 +120,9 @@ img {
 
 .dotm-dish {
   color: var(--seagreen);
-  margin-left: -170px;
-  font-family: "Montserrat", sans-serif;
+  margin-left: -210px;
+  font-family: "Bonheur Royale", cursive;
+  font-size: 32px;
 }
 
 .dish-img-wrapper {
@@ -172,6 +173,7 @@ img {
 
 .tax-text {
   color: var(--hover-color);
+  font-size: 32px;
 }
 
 .order-btn {
@@ -181,6 +183,7 @@ img {
   color: var(--white);
   border-radius: 5px;
   margin-right: 65px;
+  padding-top: 10px;
 }
 
 .order-btn {
@@ -189,7 +192,7 @@ img {
   color: var(--white);
   margin-top: 5px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 10px 20px;
 }
 
 /*MENU ITEMS*/
@@ -197,6 +200,7 @@ img {
   margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: -15px;
 }
 
 .menu-item {
@@ -209,3 +213,19 @@ img {
 .tag {
   color: var(--price-tag-color);
   text-align: center;
+  font-size: 28px;
+}
+
+.food-size {
+  height: 170px;
+  width: 190px;
+}
+
+.dish-info h3 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.reg-menu-price {
+  font-size: 32px;
+}
