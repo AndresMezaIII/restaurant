@@ -16,15 +16,15 @@
 }
 
 /*SITE GLOBALS*/
-
 body {
-  font-family: arial;
-  background-color: var(--white);
   background-image: url("texture.png");
+  font-family: "Bonheur Royale", cursive;
+  font-size: 32px;
 }
 
 a {
   text-decoration: none;
+  font-size: 28px;
 }
 
 img {
@@ -149,10 +149,11 @@ img {
 
 .dotm-blurb p {
   width: 65%;
+  font-size: 24px;
 }
 
 .dotm-p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Bonheur Royale", cursive;
 }
 
 .order-now-container {
