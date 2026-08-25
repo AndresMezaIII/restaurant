@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Form</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <!-- these attributes allow us to handle data to the server -->
+    <form action="" method="">
+      <!-- for links data to labels -->
+      <label for="fname">First Name: </label>
+      <input type="text" id="fname" />
+      <label type="text" id="lname" for="lname">Last Name: </label>
+      <input type="text" id="lnae" />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>Choose your favorite programming language:</p>
+    <!-- an empty form tag allows displaying the elements only -->
+    <form>
+      <label for="java">Java</label>
+      <input type="radio" id="java" name="languages" value="Java" />
+      <label for="python">Python</label>
+      <input type="radio" id="python" name="languages" value="Python" />
+      <label for="C">C</label>
+      <input type="radio" id="C" name="languages" value="C" />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>Select the options that apply to you:</p>
+    <form>
+      <input type="checkbox" id="vehicle_one" name="vehicle" value="Bike" />
+      <label for="vehicle_one">Bike</label>
+      <input type="checkbox" id="vehicle_two" name="vehicle" value="Car" />
+      <label for="vehicle_two">Car</label>
+      <input type="checkbox" id="vehicle_three" name="vehicle" value="Boat" />
+      <label for="vehicle_three">Boat</label>
+      <input type="submit" value="Submit" />
+    </form>
+    <p>Elemnts inside of a form</p>
+    <fieldset>
+      <legend>Contact Information:</legend>
+      <label type="text" for="fname">First Name: </label>
+      <input type="text" for="fname" />
+    </fieldset>
+    <fieldset>
+      <legend>Vehicles</legend>
+      <label for="cars">Choose a car: </label>
+      <select id="cars">
+        <option value="BMW">BMW</option>
+        <option value="Ford">Ford</option>
+        <option value="Toyota">Toyota</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Body:</legend>
+      <label for="message">Leave a message: </label><br />
+      <textarea id="message" rows="10" columns="80"></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Input types:</legend>
+      <!--password-->
+      <label for="password">Password</label>
+      <input type="password" id="password" /><br />
+      <!-- type color, date, email. file, number -->
+      <label for="color">Choose a color: </label>
+      <input type="color" id="color" /><br />
+      <label for="date">Date: </label>
+      <input type="date" id="date" /><br />
+      <label for="email">Email: </label>
+      <input type="email" id="email" /><br />
+      <label for="file">File: </label>
+      <input type="file" id="file" /><br />
+      <label for="number">Number</label>
+      <input type="number" id="number" /><br />
+    </fieldset>
+  </body>
+</html>
