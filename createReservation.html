@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create a Reservation</title>
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/forms.css" />
     <script
       src="https://kit.fontawesome.com/337be747ec.js"
       crossorigin="anonymous"
@@ -28,22 +29,19 @@
     <main>
       <div class="reservation-wrapper">
         <div class="reservation-header">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-            tempora quia eius ducimus est sint doloremque animi, aliquid illum
-            temporibus fugiat cumque cum? Mollitia repellendus odit iusto vel
-            libero nihil.
-          </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </div>
-        <form>
+        <form class="reservation-form">
           <fieldset>
             <legend>Contact Information:</legend>
             <div class="form-row">
               <div class="form-group">
                 <label>First Name: </label>
                 <input type="text" id="fname" name="fname" required />
-                <label>Last Name: </label>
-                <input type="text" id="lname" name="lname" required />
+                <div class="form-group">
+                  <label>Last Name: </label>
+                  <input type="text" id="lname" name="lname" required /><br />
+                </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
@@ -52,7 +50,7 @@
                 </div>
                 <div class="form-group">
                   <label>E-mail: </label>
-                  <input type="email" id="email" name="email" />
+                  <input type="email" id="email" name="email" /><br />
                 </div>
               </div>
             </div>
@@ -70,19 +68,58 @@
               </div>
               <div class="form-group">
                 <label>Number of Guests: </label>
-                <input type="number" id="guests" name="guests" />
+                <input
+                  type="number"
+                  id="guests"
+                  name="guests"
+                  min="1"
+                  max="30"
+                />
               </div>
             </div>
             <div class="form-group">
               <label>Table Preference: </label>
               <select>
+                <option value="" disabled selected>Select an option</option>
                 <option name="outside" id="outside">Outdoor Patio</option>
                 <option name="bar" id="bar">Bar Area</option>
                 <option name="booth" id="booth">Booth</option>
                 <option name="window" id="window">Window Seat</option>
+                <option name="none" id="none">No preference</option>
               </select>
             </div>
           </fieldset>
+          <fieldset>
+            <legend>Occasion:</legend>
+            <div class="radio-group">
+              <!-- wrap in spans-->
+              <label class="radio-option">Just Dinner</label>
+              <input type="radio" name="occasion" id="occasion" />
+              <label class="radio-option">Birthday</label>
+              <input type="radio" name="occasion" id="occasion" />
+              <label class="radio-option">Anniversary</label>
+              <input type="radio" nme="occasion" id="occasion" />
+              <label class="radio-option">Business</label>
+              <input type="radio" name="occasion" id="occasion" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <!-- wrap in spans -->
+            <legend>Dietary Needs:</legend>
+            <label class="checkbox-option">
+              <input type="checkbox" name="dietary-needs" id="dietary-needs" />
+              <span>Vegetarian</span>
+            </label>
+            <label>Gluten-free</label>
+            <input type="checkbox" name="dietary-needs" id="dietary-needs" />
+            <label>Food Allergies</label>
+            <input type="checkbox" name="dietary-needs" id="dietary-needs" />
+            <label class="checkbox-option">
+              <input type="checkbox" name="dietary-needs" id="dietary-needs" />
+              <span>Vegan</span>
+            </label>
+          </fieldset>
+          <button type="submit" class="submit-btn">Confirm Reservation</button>
         </form>
       </div>
     </main>
