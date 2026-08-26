@@ -1,3 +1,7 @@
+:root {
+  --primary-color: rgb(144, 28, 62);
+}
+
 .reservation-wrapper {
   background-color: white;
   max-width: 800px;
@@ -7,7 +11,7 @@
 
 .reservation-header {
   text-align: center;
-  background-color: #222222;
+  background-color: var(--primary-color);
   color: white;
 }
 
@@ -18,16 +22,16 @@
 fieldset {
   padding: 20px 0;
   border: none;
-  border-top: 1px solid red;
+  border-top: 1px solid var(--primary-color);
 }
 
 .form-row {
   display: flex;
-  gap: 16px;
+  gap: 14px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   flex: 1 1 200px;
@@ -35,6 +39,8 @@ fieldset {
 
 input[type="text"],
 input[type="number"],
+input[type="email"],
+input[type="tel"],
 select {
   padding: 3px;
   border: 1px solid #eeeeee;
@@ -44,33 +50,34 @@ select {
 .radio-group,
 .checkbox-group {
   display: flex;
-  gap: 10px;
-}
-
-.radio-group,
-.checkbox-group {
-  display: flex;
   align-items: center;
-  background-color: #dedede;
+  justify-content: flex-start;
   padding: 5px;
   font-size: 12px;
-  border-radius: 30px;
   gap: 5px;
-  cursor: pointer;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+  accent-color: var(--primary-color);
 }
 
 .radio-option:hover,
 .checkbox-option:hover {
-  background-color: #eeeeee;
+  background-color: #ededed;
+  cursor: pointer;
 }
 
-radio-option input,
+.radio-option input,
 .checkbox-option input {
-  accent-color: #b8880a;
+  accent-color: var(--primary-color);
+  cursor: pointer;
 }
 .submit-btn {
   width: 100%;
-  background-color: #b8880a;
+  background-color: var(--primary-color);
   border: none;
   color: white;
   padding: 10px;

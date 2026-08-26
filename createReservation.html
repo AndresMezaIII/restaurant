@@ -6,43 +6,64 @@
     <title>Create a Reservation</title>
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" href="assets/forms.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/337be747ec.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+
     <header class="header">
+      
       <p><i class="fa-solid fa-bars"></i></p>
+      
       <div class="logoSlogan">
         <h1 class="logo">The Royal Lounge</h1>
         <h5 class="slogan">Est. 2026</h5>
       </div>
-      <img src="assets/pics/seal.png" alt="A royal seal" class="seal" />
+      
+      <!--<img src="assets/pics/seal.png" alt="A royal seal" class="seal" />-->
+      
       <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="reservations.html">Reservations</a>
         <a href="createReservation">Make a Reservation</a>
+      
       </nav>
+      
       <p><i class="fa-solid fa-cart-shopping"></i></p>
     </header>
+
     <main>
+
       <div class="reservation-wrapper">
+
         <div class="reservation-header">
+
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        
         </div>
+        
         <form class="reservation-form">
+          
           <fieldset>
             <legend>Contact Information:</legend>
             <div class="form-row">
               <div class="form-group">
                 <label>First Name: </label>
                 <input type="text" id="fname" name="fname" required />
-                <div class="form-group">
-                  <label>Last Name: </label>
-                  <input type="text" id="lname" name="lname" required /><br />
-                </div>
               </div>
+              <div class="form-group">
+                  <label>Last Name: </label>
+                  <input type="text" id="lname" name="lname" required />
+              </div>
+            </div>
               <div class="form-row">
                 <div class="form-group">
                   <label>Telephone: </label>
@@ -53,8 +74,8 @@
                   <input type="email" id="email" name="email" /><br />
                 </div>
               </div>
-            </div>
           </fieldset>
+
           <fieldset>
             <legend>Reservation details:</legend>
             <div class="form-row">
@@ -67,7 +88,7 @@
                 <input type="time" id="time" name="time" />
               </div>
               <div class="form-group">
-                <label>Number of Guests: </label>
+                <label>Guests: </label>
                 <input
                   type="number"
                   id="guests"
@@ -89,39 +110,48 @@
               </select>
             </div>
           </fieldset>
+
           <fieldset>
-            <legend>Occasion:</legend>
+            <legend>Occasion: </legend>
             <div class="radio-group">
               <!-- wrap in spans-->
-              <label class="radio-option">Just Dinner</label>
-              <input type="radio" name="occasion" id="occasion" />
-              <label class="radio-option">Birthday</label>
-              <input type="radio" name="occasion" id="occasion" />
-              <label class="radio-option">Anniversary</label>
-              <input type="radio" nme="occasion" id="occasion" />
-              <label class="radio-option">Business</label>
-              <input type="radio" name="occasion" id="occasion" />
+              
+              <input type="radio" name="occasion" class="radio-option" />
+              <label for="occasion">Dinner</label>
+              
+              <input type="radio" name="occasion" class="radio-option" />
+              <label for="occasion">Birthday</label>
+              
+              <input type="radio" name="occasion" class="radio-option" />
+              <label for="occasion">Anniversary</label>
+              
+              <input type="radio" name="occasion" class="radio-option" />
+              <label for="occasion">Business</label>
             </div>
           </fieldset>
+
           <fieldset>
-            <!-- wrap in spans -->
             <legend>Dietary Needs:</legend>
-            <label class="checkbox-option">
-              <input type="checkbox" name="dietary-needs" id="dietary-needs" />
-              <span>Vegetarian</span>
+            <label class="checkbox-option"></label>
+            <input type="checkbox" name="dietary-needs" id="dietary-needs" class="checkbox-option"/>
+            <span>Vegetarian</span>
             </label>
-            <label>Gluten-free</label>
-            <input type="checkbox" name="dietary-needs" id="dietary-needs" />
-            <label>Food Allergies</label>
-            <input type="checkbox" name="dietary-needs" id="dietary-needs" />
-            <label class="checkbox-option">
-              <input type="checkbox" name="dietary-needs" id="dietary-needs" />
-              <span>Vegan</span>
-            </label>
+            <label class="checkbox-option"></label>
+            <input type="checkbox" name="dietary-needs" id="dietary-needs" class="checkbox-option" />
+            <span>Gluten-free</span>
+            <label class="checkbox-option"></label>
+            <input type="checkbox" name="dietary-needs" id="dietary-needs" class="checkbox-option" />
+            <span>Allergies</span>
+            <label class="checkbox-option"></label>
+            <input type="checkbox" name="dietary-needs" id="dietary-needs" class="checkbox-option" />
+            <span>Vegan</span>
           </fieldset>
+
           <button type="submit" class="submit-btn">Confirm Reservation</button>
+        
         </form>
       </div>
+    </div>
     </main>
   </body>
 </html>

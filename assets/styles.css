@@ -12,19 +12,20 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Bonheur Royale", cursive;
+  /*font-family: "Bonheur Royale", cursive;*/
 }
 
 /*SITE GLOBALS*/
 body {
   background-image: url("texture.png");
-  font-family: "Bonheur Royale", cursive;
+  /*font-family: "Bonheur Royale", cursive;*/
   font-size: 32px;
 }
 
 a {
   text-decoration: none;
   font-size: 28px;
+  font-family: "Bonheur Royale", cursive;
 }
 
 img {
@@ -62,6 +63,7 @@ img {
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 4rem;
+  font-weight: 100px;
 }
 
 .logoSlogan {
@@ -91,6 +93,7 @@ img {
   width: 85%;
   margin: 10px auto;
   gap: 20px;
+  font-family: "Bonheur Royale", cursive;
 }
 
 /*Dish of the Month*/
