@@ -1,10 +1,11 @@
 :root {
   --primary-color: rgb(144, 28, 62);
+  --secondary-color: rgb(239, 180, 197);
 }
 
 .reservation-wrapper {
   background-color: white;
-  max-width: 800px;
+  max-width: 400px;
   border-radius: 10px;
   margin: 0 auto;
 }
@@ -31,7 +32,7 @@ fieldset {
 }
 
 .form-group {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: flex;
   flex-direction: column;
   flex: 1 1 200px;
@@ -47,8 +48,16 @@ input[type="date"],
 input[type="time"],
 select {
   padding: 3px;
-  border: 1px solid var(--primary-color);
-  font-size: 18px;
+  border: 1px solid var(--secondary-color);
+  font-size: 12px;
+}
+
+label {
+  font-size: 16px;
+}
+
+legend {
+  font-size: 24px;
 }
 
 .radio-group,
