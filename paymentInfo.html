@@ -40,7 +40,7 @@
       </nav>
       <p><i class="fa-solid fa-cart-shopping"></i></p>
     </header>
-    <main class="main-container">
+    <main>
       <form class="form-wrapper">
         <div class="form-header">
           <p class="header-p">How would you like to pay for your visit?</p>
@@ -49,14 +49,13 @@
           <legend>Billing Information:</legend>
           <div class="form-row">
             <div class="form-group">
-              <label class="inputInfo" for="fname">First Name: </label>
+              <label for="fname">First Name: </label>
               <input
                 type="text"
                 name="fname"
                 id="fname"
                 placeholder="John"
                 autocomplete="billing"
-                class="inputInfo"
               />
               <label for="lname" class="inputInfo">Last Name: </label>
               <input
@@ -89,6 +88,10 @@
                 placeholder="Huntsville"
                 autocomplete="billing"
               />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
               <label for="state">State: </label>
               <select autocomplete="billing" name="state" id="state">
                 <option value="Alabama">Alabama</option>
@@ -139,10 +142,6 @@
                 <option value="Wisconsin">Wisconsin</option>
                 <option value="Wyoming">Wyoming</option>
               </select>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
               <label for="zip">Zip Code: </label>
               <input
                 type="text"

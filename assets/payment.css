@@ -2,43 +2,45 @@
   --primary-color: rgb(144, 28, 62);
 }
 
-.main-container {
-  width: 45%;
-  margin: 10px auto;
-  display: flex;
-  justify-content: center;
-}
-
 .form-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 85%;
+  width: 60%;
   border: 1px solid var(--primary-color);
-  padding: 30px;
   background-color: white;
+  font-family: "Bonheur Royale", cursive;
+  font-size: 28px;
+  margin: 10px auto;
 }
 .form-group {
 }
 
 .form-header {
-  background-color: var(--prmiary-color);
-  text-align: center;
   color: white;
+  text-align: center;
+}
+
+.header-p {
+  background-color: var(--primary-color);
 }
 
 fieldset {
   border: 1px solid gray;
-}
-
-label {
-  font-size: 24px;
-  width: 45px;
-  margin: 3px;
+  margin: 10px;
 }
 
 .form-row {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+}
+
+legend {
+  font-size: 32px;
+}
+
+main {
+  width: 75%;
+  margin: 10px auto;
+}
+
+label {
+  margin: 4px;
 }
