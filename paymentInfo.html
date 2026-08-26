@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment</title>
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/payment.css" />
     <!--START OF GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
       rel="stylesheet"
     />
+    <!--Start of Font Awesome icons-->
+    <script
+      src="https://kit.fontawesome.com/337be747ec.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -32,8 +38,130 @@
           /></a>
         </div>
       </nav>
-
       <p><i class="fa-solid fa-cart-shopping"></i></p>
     </header>
+    <main class="main-container">
+      <form class="form-wrapper">
+        <div class="form-header">
+          <p class="header-p">How would you like to pay for your visit?</p>
+        </div>
+        <fieldset>
+          <legend>Billing Information:</legend>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="inputInfo" for="fname">First Name: </label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="John"
+                autocomplete="billing"
+                class="inputInfo"
+              />
+              <label for="lname" class="inputInfo">Last Name: </label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Smith"
+                autocomplete="billing"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="address">Address: </label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="123 Mary Todd Blvd."
+                autocomplete="billing"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="city">City: </label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Huntsville"
+                autocomplete="billing"
+              />
+              <label for="state">State: </label>
+              <select autocomplete="billing" name="state" id="state">
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Missouri">Missouri</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="New York">New York</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="Utah">Utah</option>
+                <option value="Vermont">Vermont</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="zip">Zip Code: </label>
+              <input
+                type="text"
+                inputmode="numeric"
+                autocomplete="postal-code"
+                name="zip"
+                id="zip"
+                maxlength="10"
+                pattern="[0-9]{5}(-[0-9]{4})?"
+                placeholder="35801"
+                autocomplete="billing"
+              />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Payment Method Information:</legend>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>

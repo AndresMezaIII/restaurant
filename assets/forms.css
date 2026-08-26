@@ -14,10 +14,12 @@
   text-align: center;
   background-color: var(--primary-color);
   color: white;
+  font-family: "Bonheur Royale", cursive;
 }
 
 .reservation-form {
   padding: 30px;
+  font-family: "Bonheur Royale", cursive;
 }
 
 fieldset {
@@ -99,4 +101,5 @@ legend {
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: "Bonheur Royale", cursive;
 }
