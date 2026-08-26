@@ -41,9 +41,13 @@ input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="tel"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="date"],
+input[type="time"],
 select {
   padding: 3px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--primary-color);
   font-size: 18px;
 }
 
@@ -53,20 +57,18 @@ select {
   align-items: center;
   justify-content: flex-start;
   padding: 5px;
-  font-size: 12px;
+  font-size: 14px;
   gap: 5px;
 }
 
 .radio-option {
   display: flex;
   align-items: center;
-  background-color: #ededed;
   accent-color: var(--primary-color);
 }
 
 .radio-option:hover,
 .checkbox-option:hover {
-  background-color: #ededed;
   cursor: pointer;
 }
 
@@ -74,6 +76,10 @@ select {
 .checkbox-option input {
   accent-color: var(--primary-color);
   cursor: pointer;
+}
+
+.dietary {
+  font-size: 14px;
 }
 .submit-btn {
   width: 100%;

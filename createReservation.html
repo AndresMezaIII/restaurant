@@ -116,16 +116,16 @@
             <div class="radio-group">
               <!-- wrap in spans-->
               
-              <input type="radio" name="occasion" class="radio-option" />
+              <input type="radio" class="radio-option" id="occasion" name="occasion" />
               <label for="occasion">Dinner</label>
               
-              <input type="radio" name="occasion" class="radio-option" />
+              <input type="radio" id="occasion" class="radio-option" name="occasion" />
               <label for="occasion">Birthday</label>
               
-              <input type="radio" name="occasion" class="radio-option" />
+              <input type="radio" class="radio-option" id="occasion" name="occasion" />
               <label for="occasion">Anniversary</label>
               
-              <input type="radio" name="occasion" class="radio-option" />
+              <input type="radio" class="radio-option" id="occasion" name="occasion" />
               <label for="occasion">Business</label>
             </div>
           </fieldset>
@@ -133,18 +133,18 @@
           <fieldset>
             <legend>Dietary Needs:</legend>
             <label class="checkbox-option"></label>
-            <input type="checkbox" name="dietary-needs" id="dietary-needs" class="checkbox-option"/>
-            <span>Vegetarian</span>
+            <input type="checkbox" id="dietary-needs" class="checkbox-option" name="dietary-needs"/>
+            <span class="dietary">Vegetarian</span>
             </label>
             <label class="checkbox-option"></label>
             <input type="checkbox" name="dietary-needs" id="dietary-needs" class="checkbox-option" />
-            <span>Gluten-free</span>
+            <span class="dietary">Gluten-free</span>
             <label class="checkbox-option"></label>
             <input type="checkbox" name="dietary-needs" id="dietary-needs" class="checkbox-option" />
-            <span>Allergies</span>
+            <span class="dietary">Allergies</span>
             <label class="checkbox-option"></label>
             <input type="checkbox" name="dietary-needs" id="dietary-needs" class="checkbox-option" />
-            <span>Vegan</span>
+            <span class="dietary">Vegan</span>
           </fieldset>
 
           <button type="submit" class="submit-btn">Confirm Reservation</button>
