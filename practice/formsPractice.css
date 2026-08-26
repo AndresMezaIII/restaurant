@@ -1,0 +1,21 @@
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table-head {
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+th:hover {
+  background-color: greenyellow;
+}
+
+td:hover {
+  background-color: greenyellow;
+}
