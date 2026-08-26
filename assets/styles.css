@@ -20,6 +20,7 @@ body {
   background-image: url("texture.png");
   /*font-family: "Bonheur Royale", cursive;*/
   font-size: 32px;
+  background-attachment: fixed;
 }
 
 a {
