@@ -58,6 +58,26 @@ img {
   color: var(--hover-color);
 }
 
+.visa {
+  height: 50px;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ccards {
+  width: 105%;
+}
+
+.payText {
+  margin: 0;
+  padding: 0;
+}
+
 .logo {
   font-family: "Bonheur Royale", cursive;
   font-weight: 600;
