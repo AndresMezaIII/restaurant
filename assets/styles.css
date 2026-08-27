@@ -56,6 +56,18 @@ h3 {
 }
 
 /*HEADER*/
+/*mobile*/
+/*@media (max-width: 768px) {
+  .header nav {
+    display: none;
+  }
+
+  body .dish-of-the-month {
+    flex-direction: column;
+    width: 90%;
+  }
+}*/
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -78,6 +90,12 @@ h3 {
 
 .navigation a:hover {
   color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
 }
 
 .visa {
@@ -241,12 +259,23 @@ h3 {
   padding-top: 10px 20px;
 }
 
+@media (max-width: 768px) {
+  .dish-of-the-month {
+    flex-direction: column;
+  }
+}
+
 /*MENU ITEMS*/
 .menu-container {
   margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: -15px;
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: 1fr;
 }
 
 .menu-item {

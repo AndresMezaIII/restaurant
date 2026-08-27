@@ -103,3 +103,21 @@ legend {
   letter-spacing: 2px;
   font-family: "Bonheur Royale", cursive;
 }
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .form-group {
+    flex: 1 1 20px;
+    margin-bottom: 2px;
+  }
+
+  fieldset {
+    padding: 0;
+    margin: 0;
+  }
+}
