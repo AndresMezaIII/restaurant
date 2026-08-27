@@ -1,0 +1,71 @@
+/*Desktop*/
+html {
+  font-size: 62.5%;
+  /*1rem = 10px as 1rem is by default 16px*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2;
+  width: 70%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  font-size: 1.6rem;
+  color: white;
+}
+
+header {
+  background-color: blue;
+  height: 30vh;
+}
+
+main {
+  background-color: lightskyblue;
+  height: 40vh;
+}
+
+footer {
+  background-color: black;
+  height: 30vh;
+}
+
+/*TABLET*/
+@media (min-width: 601px) and (max-width: 768px) {
+  header {
+    background-color: antiquewhite;
+  }
+
+  p {
+    width: 85%;
+  }
+
+  a {
+    display: none;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 600px) {
+  header {
+    background-color: aqua;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  a {
+    display: none;
+  }
+}
