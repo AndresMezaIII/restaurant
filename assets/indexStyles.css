@@ -1,0 +1,117 @@
+:root {
+  --primary-color: rgb(144, 28, 62);
+  --secondary-color: rgb(182, 20, 20);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("pics/texture.png");
+  background-attachment: fixed;
+}
+
+img {
+  height: 70px;
+  width: 70px;
+}
+
+/*Start of Header*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  background-attachment: fixed;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+  font-weight: 400;
+  font-size:;
+}
+
+@media (max-width: 772px) {
+  .navigation {
+    display: none;
+  }
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: "Bonheur Royale", cursive;
+  font-size: 3rem;
+  margin: 0 5px;
+}
+
+.navigation a:hover {
+  color: var(--secondary-color);
+}
+
+.logoSlogan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Bonheur Royale", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.slogan {
+  font-weight: 400;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ccards {
+  width: 105%;
+}
+/*End of Header*/
+
+/*Main*/
+.main-container {
+  width: 85%;
+  margin: 10px auto;
+  padding: 0;
+  gap: 20px;
+  font-family: "Bonheur Royale", cursive;
+}
+
+@media(max-width: 772px) {
+  width: 100%
+  margin: 3px;
+}
+
+.dotm-ad {
+    text-align: center;
+    color: seagreen;
+    font-size: 3rem;
+}
+
+@media (max-width: 236px) {
+    .dotm-ad {
+        font-size: 2rem;
+    }
+}

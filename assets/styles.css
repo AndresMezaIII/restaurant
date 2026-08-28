@@ -16,7 +16,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  /*font-family: "Bonheur Royale", cursive;*/
 }
 
 /*SITE GLOBALS*/
@@ -82,24 +81,20 @@ h3 {
   align-items: center;
 }
 
-.navigation a {
-  color: var(--primary-color);
-  margin-right: 20px;
-  font-weight: 600;
-}
-
-.navigation a:hover {
-  color: var(--hover-color);
-}
-
 @media (max-width: 768px) {
   .navigation {
     display: none;
   }
 }
 
-.visa {
-  height: 50px;
+.navigation a {
+  color: var(--primary-color);
+  margin-right: 20px;
+  font-weight: 400;
+}
+
+.navigation a:hover {
+  color: var(--hover-color);
 }
 
 .payment {
@@ -113,19 +108,6 @@ h3 {
   width: 105%;
 }
 
-.payText {
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
-  font-family: "Bonheur Royale", cursive;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-size: 4rem;
-  font-weight: 100px;
-}
-
 .logoSlogan {
   display: flex;
   flex-direction: column;
@@ -133,18 +115,17 @@ h3 {
   align-items: center;
 }
 
-.slogan {
+.logo {
   font-family: "Bonheur Royale", cursive;
-  font-size: 32px;
+  letter-spacing: 3px;
+  font-size: 4rem;
+  font-weight: 400px;
+}
+
+.slogan {
+  font-size: 2.2rem;
   letter-spacing: 3px;
   font-weight: 100;
-}
-.seal {
-  margin-left: -140px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  width: 120px;
-  height: 120px;
 }
 /*END HEADER*/
 
@@ -156,7 +137,30 @@ h3 {
   font-family: "Bonheur Royale", cursive;
 }
 
+@media(min-width: 340px) and (max-width: 772px) {
+  width: 100%
+  margin: 2px 0px;
+}
+
 /*Dish of the Month*/
+.dotm-ad {
+  font-family: "Bonheur Royale", cursive;
+  font-size: 5rem;
+  padding: 0px;
+  color: var(--primary-color);
+  margin-left: 450px;
+  margin-top: 60px;
+  font-weight: 300;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .dotm-ad {
+    text-align: center;
+    font-size: 5rem;
+    margin: 0px;
+  }
+}
+
 .dish-of-the-month {
   display: flex;
   justify-content: center;
@@ -165,38 +169,19 @@ h3 {
   margin-left: 145px;
 }
 
-.dotm-ad {
-  font-family: "Bonheur Royale", cursive;
-  font-size: 5rem;
-  margin: 0px;
-  padding: 0px;
-  color: var(--primary-color);
-  margin-left: 450px;
-  margin-top: 60px;
-  font-weight: 300;
-}
-
-.dish-of-the-month img {
-  height: 120px;
-  width: 120px;
-}
-
-.dotm-dish {
-  color: var(--seagreen);
-  margin-left: -210px;
-  font-family: "Bonheur Royale", cursive;
-  font-size: 32px;
-}
-
-.dish-img-wrapper {
-  width: 100%;
-}
-
 .dish-image-wrapper img {
   width: 135px;
   height: 120px;
-  display: block;
   margin-top: 40px;
+}
+
+@media (min-width: 340px) and (max-width: 768px) {
+  .dish-image-wrapper img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .dotm-blurb {
@@ -210,6 +195,24 @@ h3 {
   margin-left: -110px;
 }
 
+@media (min-width:340px) and (max-width: 768px;) {
+
+}
+
+.dotm-dish {
+  color: var(--seagreen);
+  margin-left: -210px;
+  font-family: "Bonheur Royale", cursive;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .dotm-dish {
+    text-align: center;
+    margin: 0;
+  }
+}
+
 .dotm-blurb p {
   width: 65%;
   font-size: 24px;
@@ -217,6 +220,12 @@ h3 {
 
 .dotm-p {
   font-family: "Bonheur Royale", cursive;
+}
+
+@media (max-width: 768px) {
+  .dotm-p {
+    width: 100%;
+  }
 }
 
 .order-now-container {
@@ -259,12 +268,6 @@ h3 {
   padding-top: 10px 20px;
 }
 
-@media (max-width: 768px) {
-  .dish-of-the-month {
-    flex-direction: column;
-  }
-}
-
 /*MENU ITEMS*/
 .menu-container {
   margin-top: 100px;
@@ -276,6 +279,7 @@ h3 {
 @media (max-width: 768px) {
   .menu-container {
     grid-template-columns: 1fr;
+  }
 }
 
 .menu-item {
