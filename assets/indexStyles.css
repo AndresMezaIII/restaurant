@@ -18,8 +18,8 @@ body {
 }
 
 img {
-  height: 70px;
-  width: 70px;
+  height: 140px;
+  width: 135px;
 }
 
 /*Start of Header*/
@@ -28,8 +28,9 @@ img {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 20vh;
+  height: 10vh;
   background-attachment: fixed;
+  margin: 10px 10px;
 }
 
 .navigation {
@@ -41,7 +42,7 @@ img {
   font-size:;
 }
 
-@media (max-width: 772px) {
+@media (max-width: 768px) {
   .navigation {
     display: none;
   }
@@ -86,32 +87,71 @@ img {
 }
 
 .ccards {
-  width: 105%;
+  height: 60px;
+  width: 60px;
 }
 /*End of Header*/
 
 /*Main*/
 .main-container {
-  width: 85%;
+  width: 100%;
   margin: 10px auto;
   padding: 0;
-  gap: 20px;
   font-family: "Bonheur Royale", cursive;
 }
-
-@media(max-width: 772px) {
-  width: 100%
+/*why aren't my margins reducing to 3px all around?*/
+@media (max-width: 768px) {
+  width: 100%;
+  min-wdith: 505px;
   margin: 3px;
 }
 
-.dotm-ad {
-    text-align: center;
-    color: seagreen;
-    font-size: 3rem;
+.dish-of-the-month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+  margin-left auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 0px;
 }
 
-@media (max-width: 236px) {
-    .dotm-ad {
-        font-size: 2rem;
-    }
+@media (max-width: 768px) {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.dish-image-wrapper {
+  display: flex;
+  justify-content: justify-content;
+  align-items: center;
+  margin-right: 8px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  margin: 4px;
+}
+
+@media (max-width: 768px) {
+}
+
+.dotm-dish {
+  color: seagreen;
+  font-weight: 400;
+}
+
+.dotm-p {
+  min-width: 431.112px;
+  max-width: 431.112px;
+  width: 431.112px;
+  font-size: 2.5rem;
+}
+
+.vinigrette-text {
+  color: var(--primary-color);
 }
