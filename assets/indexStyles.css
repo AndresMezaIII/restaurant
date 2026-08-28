@@ -8,8 +8,8 @@ html {
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 3px;
+  padding: 2px;
 }
 
 body {
@@ -39,7 +39,7 @@ img {
   align-items: center;
   margin: 20px;
   font-weight: 400;
-  font-size:;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -60,7 +60,7 @@ img {
   color: var(--secondary-color);
 }
 
-.logoSlogan {
+.logo-est {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -73,7 +73,7 @@ img {
   font-weight: 400;
 }
 
-.slogan {
+.est {
   font-weight: 400;
   font-size: 2.2rem;
   letter-spacing: 2px;
@@ -96,14 +96,14 @@ img {
 .main-container {
   width: 100%;
   margin: 10px auto;
-  padding: 0;
   font-family: "Bonheur Royale", cursive;
 }
+
 /*why aren't my margins reducing to 3px all around?*/
 @media (max-width: 768px) {
+  .main-container {
   width: 100%;
-  min-wdith: 505px;
-  margin: 3px;
+  }
 }
 
 .dish-of-the-month {
@@ -119,10 +119,12 @@ img {
 }
 
 @media (max-width: 768px) {
+  .dish-of-the-month {
   width: 100%;
   margin: 0;
   padding: 0;
   flex-direction: column;
+  }
 }
 
 .dish-image-wrapper {
@@ -134,10 +136,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .dish-image-wrapper {
   margin: 4px;
-}
-
-@media (max-width: 768px) {
+  }
 }
 
 .dotm-dish {
