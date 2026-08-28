@@ -17,9 +17,13 @@ body {
   background-attachment: fixed;
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 img {
-  height: 140px;
-  width: 135px;
+  height: 135px;
 }
 
 /*Start of Header*/
@@ -30,14 +34,14 @@ img {
   width: 100%;
   height: 10vh;
   background-attachment: fixed;
-  margin: 10px 10px;
+  margin: 1rem 1rem;
 }
 
 .navigation {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 20px;
+  margin: 2rem;
   font-weight: 400;
   font-size: 2rem;
 }
@@ -53,7 +57,7 @@ img {
   color: var(--primary-color);
   font-family: "Bonheur Royale", cursive;
   font-size: 3rem;
-  margin: 0 5px;
+  margin: 0 0.5rem;
 }
 
 .navigation a:hover {
@@ -65,6 +69,7 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  min-width: 23.2rem;
 }
 
 .logo {
@@ -76,7 +81,9 @@ img {
 .est {
   font-weight: 400;
   font-size: 2.2rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .payment {
@@ -87,22 +94,21 @@ img {
 }
 
 .ccards {
-  height: 60px;
-  width: 60px;
+  height: 7rem;
+  width: 11.5rem;
 }
 /*End of Header*/
 
 /*Main*/
 .main-container {
   width: 100%;
-  margin: 10px auto;
+  margin: 3rem auto;
   font-family: "Bonheur Royale", cursive;
 }
 
-/*why aren't my margins reducing to 3px all around?*/
 @media (max-width: 768px) {
   .main-container {
-  width: 100%;
+    width: 100%;
   }
 }
 
@@ -112,33 +118,27 @@ img {
   align-items: center;
   width: 100%;
   font-size: 2rem;
-  margin-left auto;
+  margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
-  margin-bottom: 0px;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 768px) {
   .dish-of-the-month {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 0;
+    flex-direction: column;
   }
 }
 
 .dish-image-wrapper {
   display: flex;
-  justify-content: justify-content;
+  justify-content: center;
   align-items: center;
-  margin-right: 8px;
+  margin-right: 0.8rem;
   position: relative;
-}
-
-@media (max-width: 768px) {
-  .dish-image-wrapper {
-  margin: 4px;
-  }
 }
 
 .dotm-dish {
@@ -147,12 +147,111 @@ img {
 }
 
 .dotm-p {
-  min-width: 431.112px;
-  max-width: 431.112px;
-  width: 431.112px;
+  min-width: 40.3rem;
+  max-width: 40.3rem;
+  width: 40.3rem;
   font-size: 2.5rem;
 }
 
 .vinigrette-text {
   color: var(--primary-color);
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 3rem;
+}
+
+.order-btn {
+  background-color: var(--primary-color);
+  height: 3rem;
+  width: 7rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+/*Main*/
+.menu-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4;
+}
+
+.menu-item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item img {
+  height: 13rem;
+  width: 19rem;
+}
+
+.menu-item h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.menu-item-grid-1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.menu-item-flex-1 {
+  justify-content: flex-end;
+}
+
+.menu-item-grid-2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.menu-item-flex-2 {
+  justify-content: flex-start;
+}
+
+.menu-item-grid-3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.menu-item-flex-3 {
+  justify-content: flex-end;
+}
+
+.menu-item-grid-4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.menu-item-flex-4 {
+  justify-content: flex-start;
+}
+
+.dish-info {
+  margin: 0rem;
+  padding: 0rem;
+  height: 7rem;
+}
+
+.dish-info h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.item-price {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
 }
